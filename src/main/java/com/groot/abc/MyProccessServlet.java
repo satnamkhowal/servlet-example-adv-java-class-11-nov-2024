@@ -33,7 +33,8 @@ public class MyProccessServlet extends HttpServlet{
 					ResultSet rs= ps.executeQuery();
 					if(rs.next()) {
 						out.print("result found");
-						resp.sendRedirect("/welcome");
+//						resp.sendRedirect("/welcome");
+						req.getRequestDispatcher("/welcome").forward(req, resp);
 						
 					}else {
 						out.print("<font color='red'>User Name password is incorrect</font>");
