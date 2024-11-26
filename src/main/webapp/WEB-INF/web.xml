@@ -23,5 +23,13 @@
   	<servlet-name>s2</servlet-name>
   	<servlet-class>com.groot.abc.SecondServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>myprocess</servlet-name>
+  	<servlet-class>com.groot.abc.MyProccessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>myprocess</servlet-name>
+  	<url-pattern>/myprocess</url-pattern>
+  </servlet-mapping>
   
 </web-app>
